@@ -1,6 +1,8 @@
 # power_learn_project_final-
 THIS IS MY FINAL PROJECT AT PLP
 
+https://www.canva.com/design/DAGXlwHziv8/ico0DtXQERXVNW118ZWJPw/edit?utm_content=DAGXlwHziv8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton (PITCH DECK)
+
         WealthWise Web application
 
 : Your Financial Future, Simplified
