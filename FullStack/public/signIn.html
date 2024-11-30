@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignIn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIn</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- This is a SignIn section -->
-    <section>
-        <div class="wrapper-SignIn">
-            <form method="post">
-                <div>
-                    <label for="Email"></label>
-                    <input type="email" placeholder="Email">
-                </div>
-                <div>
-                    <label for="Password"></label>
-                    <input type="password" placeholder="Password">
-                </div>
-                <div>
-                    <button type="submit">Sign In</button>
-                </div>
-            </form>
-            <div>
-                <p>Don't have an account? <a href="signUp.html">Sign Up</a></p>
-            </div>
+  <section>
+    <div class="wrapper-SignIn">
+      <h2>Sign In</h2>
+      <form method="post">
+        <div>
+          <label for="Email">Email</label>
+          <input type="email" id="Email" placeholder="Email">
         </div>
-
-    </section>
-
+        <div>
+          <label for="Password">Password</label>
+          <input type="password" id="Password" placeholder="Password">
+        </div>
+        <div>
+          <button type="submit">Sign In</button>
+        </div>
+      </form>
+      <p>Don't have an account? <a href="signUp.html">Sign Up</a></p>
+    </div>
+  </section>
 </body>
 </html>

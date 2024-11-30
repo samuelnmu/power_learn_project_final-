@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- This is a signUp section form -->
-    <section>
-        <div class="wrapper-signUp">
-            <form method="post">
-                <div>
-                    <label for="FirstName"></label>
-                    <input type="name" placeholder="FirstName">
-                </div>
-                <div>
-                    <label for="MiddleName"></label>
-                    <input type="name" placeholder="MiddleName">
-                </div>
-                <div>
-                    <label for="LastName"></label>
-                    <input type="name" placeholder="LastName">
-                </div>
-                <div>
-                    <label for="Email"></label>
-                    <input type="email" placeholder="Email">
-                </div>
-                <div>
-                    <label for="Password"></label>
-                    <input type="password" placeholder="Password">
-                </div>
-                <div>
-                    <label for="RepeatPassword"></label>
-                    <input type="password" placeholder="Repeat Password">
-                </div>
-                <div>
-                    <button type="reset">Reset</button>
-                    <button type="submit">Register</button>
-                </div>
-            </form>
-            <div>
-                <p>Already have an account? <a href="signIn.html">Sign In</a></p>
-            </div>
+  <section>
+    <div class="wrapper-signUp">
+      <h2>Sign Up</h2>
+      <form method="post">
+        <div>
+          <label for="FirstName">First Name</label>
+          <input type="text" id="FirstName" placeholder="First Name">
         </div>
-
-    </section>
-    
+        <div>
+          <label for="MiddleName">Middle Name</label>
+          <input type="text" id="MiddleName" placeholder="Middle Name">
+        </div>
+        <div>
+          <label for="LastName">Last Name</label>
+          <input type="text" id="LastName" placeholder="Last Name">
+        </div>
+        <div>
+          <label for="Email">Email</label>
+          <input type="email" id="Email" placeholder="Email">
+        </div>
+        <div>
+          <label for="Password">Password</label>
+          <input type="password" id="Password" placeholder="Password">
+        </div>
+        <div>
+          <label for="RepeatPassword">Repeat Password</label>
+          <input type="password" id="RepeatPassword" placeholder="Repeat Password">
+        </div>
+        <div>
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to the Terms and Conditions</label>
+        </div>
+        <div>
+          <button type="reset">Reset</button>
+          <button type="submit">Register</button>
+        </div>
+      </form>
+      <p>Already have an account? <a href="signIn.html">Sign In</a></p>
+    </div>
+  </section>
 </body>
 </html>

@@ -1,0 +1,111 @@
+.wrapper-signUp {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .wrapper-signUp h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper-signUp form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper-signUp form div {
+    margin-bottom: 10px;
+  }
+  
+  .wrapper-signUp label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .wrapper-signUp input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .wrapper-signUp button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .wrapper-signUp p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .wrapper-signUp a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+
+  /* sign In */
+  body {
+    background-color: aliceblue;
+  }
+  
+  .wrapper-SignIn {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px auto;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .wrapper-SignIn h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .wrapper-SignIn form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .wrapper-SignIn form div {
+    margin-bottom: 10px;
+  }
+  
+  .wrapper-SignIn label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .wrapper-SignIn input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .wrapper-SignIn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .wrapper-SignIn p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .wrapper-SignIn a {
+    color: #007bff;
+    text-decoration: none;
+  }
