@@ -32,6 +32,8 @@ Secure Transactions:
 Seamless buying, selling, and transferring assets within a secure environment.
 Robust security measures to protect sensitive financial information.
 Integration with trusted financial institutions for reliable transactions.
+
+
 Financial Literacy:
 
 Personalized financial advice and recommendations based on user goals and risk tolerance.
@@ -43,6 +45,8 @@ Vault:
 
 A private, password-protected space to store important financial documents and information.
 Securely access sensitive data, such as bank statements, tax returns, and insurance policies.
+
+
 Benefits:
 
 Efficiency: Streamline financial management with a single, user-friendly platform.
