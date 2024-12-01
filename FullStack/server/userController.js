@@ -62,4 +62,64 @@ exports.loginUser = async(req,res) =>{
 };
 
 // logout function
+exports.logoutUser = async(req,res) =>{
+    req.session.destroy((err) =>{
+        if(err){
+            console.error(err);
+            return res.status(500).json({message:"An error occured", error: error.message});
+        }
+        return res.status(201).json({message:"Logged out successfully"});
+    });
+};
 
+// function to get user information for editing
+exports.getUser = async(req,res) =>{
+    // chech whether user is logged in
+    if(!req.session.Id){
+        return res.status(401).json({message:"Unauthorized!"});
+    };
+
+    try {
+        // fetch user
+        const [user] = await db.execute("SELECT firstname,middlename,lastname,email FROM user WHERE id = ?",[req.session.userId]);
+        if(user.length === 0){
+            return res.status(400).json({message:"User not found"});
+        }
+
+        return res.status(201).json({message:"User details fetched for editing", user: user[0]});
+    } catch (error) {
+        console.error(error);
+        return res.status(500).json({message: "An error occured while fetching user details",error: error.message});
+        
+    }
+};
+
+// function for editing user
+exports.editUser = async(req,res) => {
+    if(!req.session.userId){
+        return res.status(401).json({message:"Unauthorized. Please login to continue"});
+    };
+
+    const errors = validationResult(req);
+    // check if any errors present in the validation
+    if(!errors.isEmpty){
+        return res.status(400).json({message:"Please correct input errors", errors: errors.array()});
+    };
+
+    // fetch user details from the request body
+    const{firstname,middlename,lastname,email,password} = req.body;
+    
+    // hash password
+    const hashedPassword = await bcrypt.hash(password,10);
+
+    try {
+        // update user details
+        await db.execute("UPDATE user SET firstname = ?, middlename = ?, lastname = ?, email = ?, password = ? WHERE id = ?",[firstname,middlename,lastname,email,hashedPassword]);
+        return res.status(201).json({message:"User details updated successfully"});        
+    } catch (error) {
+        console.error(error);
+        return res.status(501).json({message:"An error occured during editting",error: error.message});
+    };
+}
+
+// This is the end of the userConroller
