@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthWise - Financial Management</title>
+    <link rel="stylesheet" href="investor.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <img src="default-avatar.png" alt="Profile" id="profile-img">
+                <button id="change-profile-pic">Change Photo</button>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#" class="active" onclick="loadResources('assets')">Assets</a></li>
+                    <li><a href="#" onclick="loadResources('stocks')">Stocks</a></li>
+                    <li><a href="#" onclick="loadResources('shares')">Shares</a></li>
+                    <li><a href="#" onclick="loadResources('crypto')">Crypto</a></li>
+                    <li><a href="#" onclick="loadResources('realestate')">Real Estate</a></li>
+                    <li><a href="#" onclick="loadResources('balance')">Balance</a></li>
+                </ul>
+            </div>
+            <div class="resources">
+                <select id="wiki-dropdown" onchange="openWikipedia()">
+                    <option value="">Select Wikipedia Resource</option>
+                    <option value="Assets">Assets</option>
+                    <option value="Stocks">Stocks</option>
+                    <option value="Shares">Shares</option>
+                    <option value="Crypto">Crypto</option>
+                    <option value="RealEstate">Real Estate</option>
+                    <option value="Balance">Balance</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="top-bar">
+                <h1>WealthWise - Financial Overview</h1>
+                <div class="theme-toggle">
+                    <label for="theme-switch">Dark Mode</label>
+                    <input type="checkbox" id="theme-switch" onchange="toggleTheme()">
+                </div>
+            </div>
+
+            <!-- Charts (dummy content for now) -->
+            <div class="charts">
+                <div class="chart" id="asset-chart">Assets Chart</div>
+                <div class="chart" id="stock-chart">Stock Chart</div>
+                <div class="chart" id="crypto-chart">Crypto Chart</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="investor.js"></script>
+</body>
+</html>
