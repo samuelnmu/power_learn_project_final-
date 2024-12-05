@@ -62,26 +62,3 @@ CREATE TABLE FinancialGoal (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     FOREIGN KEY (investor_id) REFERENCES Investor(investor_id)
 );
-
--- Optional Tables
-
-CREATE TABLE Vault (
-    vault_id INT PRIMARY KEY AUTO_INCREMENT,
-    investor_id INT,
-    document_name VARCHAR(100),
-    document_file BLOB,
-    description TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (investor_id) REFERENCES Investor(investor_id)
-);
-
-CREATE TABLE FinancialResource (
-    resource_id INT PRIMARY KEY AUTO_INCREMENT,
-    resource_type ENUM('article', 'video', 'webinar'),
-    title VARCHAR(100),
-    link VARCHAR(255),
-    description TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);
