@@ -2,7 +2,7 @@ The proposed database for WealthWise is designed to manage user financial inform
 
 Core Tables:
 
-Investor: Stores basic Investor information like username, password, email, and personal details.
+Users: Stores basic Investor information like Fullname, password and email.
 Asset: Tracks various assets owned by investor, including stocks, bonds, real estate, and cryptocurrencies.
 Transaction: Records financial transactions related to assets, such as buying, selling, and transferring.
 FinancialGoal: Stores investor-defined financial goals with target amounts and dates.
