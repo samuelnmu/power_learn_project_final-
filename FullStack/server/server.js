@@ -24,7 +24,7 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
-    // store: new MYSQLStore({}, db) // Uncomment if you want to store sessions in MySQL
+    // store: new MYSQLStore({}, db) // store sessions in MySQL
   })
 );
 
@@ -42,6 +42,15 @@ app.get("/signUp", (req, res) => {
 app.get("/signIn", (req, res) => {
   // Serve signIn.html from the 'public/pages' folder
   res.sendFile(path.join(__dirname, "../public", "pages", "signIn.html"));
+});
+
+// Serve dashboard page
+app.get("/dashboard", (req, res) => {
+  // Check if the user is logged in
+  if (!req.session.userId) {
+    return res.redirect("/signIn"); // Redirect to sign-in page if not logged in
+  }
+  res.sendFile(path.join(__dirname, "../public", "pages", "dashboard.html"));
 });
 
 // Use the auth routes for user registration and login

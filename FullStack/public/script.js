@@ -45,6 +45,7 @@ document
     }
   });
 
+  
 // Handle Sign In Form Submission
 document
   .getElementById("loginForm")
@@ -71,8 +72,8 @@ document
 
       if (response.ok) {
         alert("Sign-in successful!");
-        //  redirect to the home page or dashboard
-        window.location.href = "/"; // Redirect to home page (or wherever appropriate)
+        // Redirect to the dashboard after successful login
+        window.location.href = "/dashboard"; // Redirect to dashboard page
       } else {
         alert("Error: " + data.message || "Invalid credentials.");
       }
