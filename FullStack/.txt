@@ -1,0 +1,22 @@
+Structure
+
+FullStack/
+├── public/
+│   ├── pages/
+│   │   ├── home.html
+│   │   ├── signUp.html
+│   │   └── signIn.html
+│   ├── script.js
+│   └── styles/
+│       ├── signIn.css
+│       ├── signUp.css
+│       └── styles.css
+├── server/
+│   ├── config/
+│   │   └── db.js
+│   ├── controllers/
+│   │   └── userController.js
+│   ├── routes/
+│   │   └── auth.js
+│   └── server.js
+└── .env
