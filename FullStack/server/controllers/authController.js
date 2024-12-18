@@ -65,7 +65,7 @@ exports.loginUser = async (req, res) => {
   }
 };
 
-// Logout user (this can be expanded as needed)
+// Logout user
 exports.logoutUser = async (req, res) => {
   req.session.destroy((err) => {
     if (err) {
