@@ -7,6 +7,8 @@
     <title>Fintech Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/dashboard.css">
+    <!--Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -56,7 +58,7 @@
         <hr>
 
         <!-- Logout Button -->
-        <button class="btn btn-danger" onclick="logout()">Logout</button>
+        <button class="btn btn-danger" onclick="logoutUser()">Logout</button>
     </div>
 
     <!-- Content Area -->
@@ -94,6 +96,12 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Graph/Chart Section -->
+        <div class="chart-container" style="margin-top: 30px;">
+            <h3>Investment Performance</h3>
+            <canvas id="investmentChart" width="400" height="200"></canvas>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>

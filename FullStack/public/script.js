@@ -1,9 +1,7 @@
 // public/script.js
 
 // Handle Sign Up Form Submission
-document
-  .getElementById("signUp-form")
-  ?.addEventListener("submit", async function (event) {
+document.getElementById("signUp-form")?.addEventListener("submit", async function (event) {
     event.preventDefault(); // Prevent the default form submission
 
     // Get form values

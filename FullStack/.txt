@@ -20,3 +20,9 @@ FullStack/
 │   │   └── auth.js
 │   └── server.js
 └── .env
+
+Instructions on how to run the app.
+
+1.cd into server
+2.node server.js
+3.follow port 3000
